@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My From
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="submit()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>name</ion-label>
+        <ion-input type="text" name="name" [(ngModel)]="param.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>surename</ion-label>
+        <ion-input type="text" name="surename" [(ngModel)]="param.surename"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button type="submit" ion-button block>บันทึก</button>
+  </form>
+</ion-content>
